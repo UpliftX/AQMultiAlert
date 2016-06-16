@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MultiAlertQueue.xcodeproj">
+      location = "self:/Users/e873350/Desktop/MyExp/MultiAlertQueue/AQMultiAlert.xcodeproj">
    </FileRef>
 </Workspace>

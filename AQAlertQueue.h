@@ -13,12 +13,17 @@
  * limitations under the License.
  */
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (strong, nonatomic) UIWindow *window;
+@interface AQAlertQueue : NSObject
 
++ (AQAlertQueue *)sharedAlertQueue;
++ (void)signalSemaphore;
+- (void)showAlert:(UIAlertController *)alertController animated:(BOOL)flag completion:(void (^ __nullable)(void))completion onViewController:(UIViewController *)parentViewController;
 
 @end
 
+NS_ASSUME_NONNULL_END

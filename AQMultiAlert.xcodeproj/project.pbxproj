@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A3288D31D083DB80009E5A7 /* AQAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3288D21D083DB80009E5A7 /* AQAlertAction.m */; };
 		3A59A1391D072E510026600D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A59A1381D072E510026600D /* main.m */; };
 		3A59A13C1D072E510026600D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A59A13B1D072E510026600D /* AppDelegate.m */; };
 		3A59A13F1D072E510026600D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A59A13E1D072E510026600D /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		3A59A1471D072E510026600D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A59A1451D072E510026600D /* LaunchScreen.storyboard */; };
 		3A59A1521D072E510026600D /* MultiAlertQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A59A1511D072E510026600D /* MultiAlertQueueTests.m */; };
 		3A59A15D1D072E510026600D /* MultiAlertQueueUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A59A15C1D072E510026600D /* MultiAlertQueueUITests.m */; };
+		3A59A16C1D072FEB0026600D /* AQAlertQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A59A16B1D072FEB0026600D /* AQAlertQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A59A1341D072E510026600D /* MultiAlertQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiAlertQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3288D11D083DB80009E5A7 /* AQAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQAlertAction.h; sourceTree = "<group>"; };
+		3A3288D21D083DB80009E5A7 /* AQAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQAlertAction.m; sourceTree = "<group>"; };
+		3A59A1341D072E510026600D /* AQMultiAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AQMultiAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A59A1381D072E510026600D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A59A13A1D072E510026600D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3A59A13B1D072E510026600D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,12 +49,14 @@
 		3A59A1431D072E510026600D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A59A1461D072E510026600D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A59A1481D072E510026600D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A59A14D1D072E510026600D /* MultiAlertQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiAlertQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A59A14D1D072E510026600D /* AQMultiAlert.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AQMultiAlert.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A59A1511D072E510026600D /* MultiAlertQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiAlertQueueTests.m; sourceTree = "<group>"; };
 		3A59A1531D072E510026600D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A59A1581D072E510026600D /* MultiAlertQueueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiAlertQueueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A59A1581D072E510026600D /* AQMultiAlert.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AQMultiAlert.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A59A15C1D072E510026600D /* MultiAlertQueueUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiAlertQueueUITests.m; sourceTree = "<group>"; };
 		3A59A15E1D072E510026600D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A59A16A1D072FEB0026600D /* AQAlertQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQAlertQueue.h; sourceTree = "<group>"; };
+		3A59A16B1D072FEB0026600D /* AQAlertQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQAlertQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,10 @@
 		3A59A12B1D072E510026600D = {
 			isa = PBXGroup;
 			children = (
+				3A3288D11D083DB80009E5A7 /* AQAlertAction.h */,
+				3A3288D21D083DB80009E5A7 /* AQAlertAction.m */,
+				3A59A16A1D072FEB0026600D /* AQAlertQueue.h */,
+				3A59A16B1D072FEB0026600D /* AQAlertQueue.m */,
 				3A59A1361D072E510026600D /* MultiAlertQueue */,
 				3A59A1501D072E510026600D /* MultiAlertQueueTests */,
 				3A59A15B1D072E510026600D /* MultiAlertQueueUITests */,
@@ -91,9 +101,9 @@
 		3A59A1351D072E510026600D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A59A1341D072E510026600D /* MultiAlertQueue.app */,
-				3A59A14D1D072E510026600D /* MultiAlertQueueTests.xctest */,
-				3A59A1581D072E510026600D /* MultiAlertQueueUITests.xctest */,
+				3A59A1341D072E510026600D /* AQMultiAlert.app */,
+				3A59A14D1D072E510026600D /* AQMultiAlert.xctest */,
+				3A59A1581D072E510026600D /* AQMultiAlert.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,9 +153,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3A59A1331D072E510026600D /* MultiAlertQueue */ = {
+		3A59A1331D072E510026600D /* AQMultiAlert */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A59A1611D072E510026600D /* Build configuration list for PBXNativeTarget "MultiAlertQueue" */;
+			buildConfigurationList = 3A59A1611D072E510026600D /* Build configuration list for PBXNativeTarget "AQMultiAlert" */;
 			buildPhases = (
 				3A59A1301D072E510026600D /* Sources */,
 				3A59A1311D072E510026600D /* Frameworks */,
@@ -155,14 +165,14 @@
 			);
 			dependencies = (
 			);
-			name = MultiAlertQueue;
+			name = AQMultiAlert;
 			productName = MultiAlertQueue;
-			productReference = 3A59A1341D072E510026600D /* MultiAlertQueue.app */;
+			productReference = 3A59A1341D072E510026600D /* AQMultiAlert.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3A59A14C1D072E510026600D /* MultiAlertQueueTests */ = {
+		3A59A14C1D072E510026600D /* AQMultiAlertTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A59A1641D072E510026600D /* Build configuration list for PBXNativeTarget "MultiAlertQueueTests" */;
+			buildConfigurationList = 3A59A1641D072E510026600D /* Build configuration list for PBXNativeTarget "AQMultiAlertTests" */;
 			buildPhases = (
 				3A59A1491D072E510026600D /* Sources */,
 				3A59A14A1D072E510026600D /* Frameworks */,
@@ -173,14 +183,14 @@
 			dependencies = (
 				3A59A14F1D072E510026600D /* PBXTargetDependency */,
 			);
-			name = MultiAlertQueueTests;
+			name = AQMultiAlertTests;
 			productName = MultiAlertQueueTests;
-			productReference = 3A59A14D1D072E510026600D /* MultiAlertQueueTests.xctest */;
+			productReference = 3A59A14D1D072E510026600D /* AQMultiAlert.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3A59A1571D072E510026600D /* MultiAlertQueueUITests */ = {
+		3A59A1571D072E510026600D /* AQMultiAlertUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A59A1671D072E510026600D /* Build configuration list for PBXNativeTarget "MultiAlertQueueUITests" */;
+			buildConfigurationList = 3A59A1671D072E510026600D /* Build configuration list for PBXNativeTarget "AQMultiAlertUITests" */;
 			buildPhases = (
 				3A59A1541D072E510026600D /* Sources */,
 				3A59A1551D072E510026600D /* Frameworks */,
@@ -191,9 +201,9 @@
 			dependencies = (
 				3A59A15A1D072E510026600D /* PBXTargetDependency */,
 			);
-			name = MultiAlertQueueUITests;
+			name = AQMultiAlertUITests;
 			productName = MultiAlertQueueUITests;
-			productReference = 3A59A1581D072E510026600D /* MultiAlertQueueUITests.xctest */;
+			productReference = 3A59A1581D072E510026600D /* AQMultiAlert.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -218,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3A59A12F1D072E510026600D /* Build configuration list for PBXProject "MultiAlertQueue" */;
+			buildConfigurationList = 3A59A12F1D072E510026600D /* Build configuration list for PBXProject "AQMultiAlert" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -231,9 +241,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A59A1331D072E510026600D /* MultiAlertQueue */,
-				3A59A14C1D072E510026600D /* MultiAlertQueueTests */,
-				3A59A1571D072E510026600D /* MultiAlertQueueUITests */,
+				3A59A1331D072E510026600D /* AQMultiAlert */,
+				3A59A14C1D072E510026600D /* AQMultiAlertTests */,
+				3A59A1571D072E510026600D /* AQMultiAlertUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -270,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3288D31D083DB80009E5A7 /* AQAlertAction.m in Sources */,
+				3A59A16C1D072FEB0026600D /* AQAlertQueue.m in Sources */,
 				3A59A13F1D072E510026600D /* ViewController.m in Sources */,
 				3A59A13C1D072E510026600D /* AppDelegate.m in Sources */,
 				3A59A1391D072E510026600D /* main.m in Sources */,
@@ -297,12 +309,12 @@
 /* Begin PBXTargetDependency section */
 		3A59A14F1D072E510026600D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3A59A1331D072E510026600D /* MultiAlertQueue */;
+			target = 3A59A1331D072E510026600D /* AQMultiAlert */;
 			targetProxy = 3A59A14E1D072E510026600D /* PBXContainerItemProxy */;
 		};
 		3A59A15A1D072E510026600D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3A59A1331D072E510026600D /* MultiAlertQueue */;
+			target = 3A59A1331D072E510026600D /* AQMultiAlert */;
 			targetProxy = 3A59A1591D072E510026600D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -415,8 +427,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MultiAlertQueue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cogicx.MultiAlertQueue;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.UpliftX.MultiAlertQueue;
+				PRODUCT_NAME = AQMultiAlert;
 			};
 			name = Debug;
 		};
@@ -426,8 +438,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MultiAlertQueue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cogicx.MultiAlertQueue;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.UpliftX.MultiAlertQueue;
+				PRODUCT_NAME = AQMultiAlert;
 			};
 			name = Release;
 		};
@@ -438,8 +450,8 @@
 				INFOPLIST_FILE = MultiAlertQueueTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cogicx.MultiAlertQueueTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiAlertQueue.app/MultiAlertQueue";
+				PRODUCT_NAME = AQMultiAlert;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AQMultiAlert.app/AQMultiAlert";
 			};
 			name = Debug;
 		};
@@ -450,8 +462,8 @@
 				INFOPLIST_FILE = MultiAlertQueueTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cogicx.MultiAlertQueueTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiAlertQueue.app/MultiAlertQueue";
+				PRODUCT_NAME = AQMultiAlert;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AQMultiAlert.app/AQMultiAlert";
 			};
 			name = Release;
 		};
@@ -461,7 +473,7 @@
 				INFOPLIST_FILE = MultiAlertQueueUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cogicx.MultiAlertQueueUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AQMultiAlert;
 				TEST_TARGET_NAME = MultiAlertQueue;
 			};
 			name = Debug;
@@ -472,7 +484,7 @@
 				INFOPLIST_FILE = MultiAlertQueueUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cogicx.MultiAlertQueueUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AQMultiAlert;
 				TEST_TARGET_NAME = MultiAlertQueue;
 			};
 			name = Release;
@@ -480,7 +492,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A59A12F1D072E510026600D /* Build configuration list for PBXProject "MultiAlertQueue" */ = {
+		3A59A12F1D072E510026600D /* Build configuration list for PBXProject "AQMultiAlert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A59A15F1D072E510026600D /* Debug */,
@@ -489,29 +501,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A59A1611D072E510026600D /* Build configuration list for PBXNativeTarget "MultiAlertQueue" */ = {
+		3A59A1611D072E510026600D /* Build configuration list for PBXNativeTarget "AQMultiAlert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A59A1621D072E510026600D /* Debug */,
 				3A59A1631D072E510026600D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		3A59A1641D072E510026600D /* Build configuration list for PBXNativeTarget "MultiAlertQueueTests" */ = {
+		3A59A1641D072E510026600D /* Build configuration list for PBXNativeTarget "AQMultiAlertTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A59A1651D072E510026600D /* Debug */,
 				3A59A1661D072E510026600D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		3A59A1671D072E510026600D /* Build configuration list for PBXNativeTarget "MultiAlertQueueUITests" */ = {
+		3A59A1671D072E510026600D /* Build configuration list for PBXNativeTarget "AQMultiAlertUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A59A1681D072E510026600D /* Debug */,
 				3A59A1691D072E510026600D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

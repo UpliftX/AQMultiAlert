@@ -13,12 +13,21 @@
  * limitations under the License.
  */
 
-#import <UIKit/UIKit.h>
+#import "AQAlertAction.h"
+#import "AQAlertQueue.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+typedef void (^PackageHandler)(UIAlertAction *action);
 
-@property (strong, nonatomic) UIWindow *window;
+@implementation AQAlertAction
 
++ (instancetype)actionWithTitleForQueued:(nullable NSString *)title style:(UIAlertActionStyle)style handler:(void (^ __nullable)(UIAlertAction *action))handler {
+    PackageHandler myHandler;
+    myHandler =  ^void(UIAlertAction *action){
+        handler(action);
+        [AQAlertQueue signalSemaphore];
+    };
+    AQAlertAction* action = (AQAlertAction*)[UIAlertAction actionWithTitle:title style:style handler:myHandler];
+    return action;
+}
 
 @end
-
